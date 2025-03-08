@@ -8,7 +8,7 @@ from flask_cors import CORS  # Allow frontend to access API
 
 app = Flask(__name__)
 CORS(app)
-embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+embedding_model = SentenceTransformer("all-mpnet-base-v2")#all-MiniLM-L6-v2
 
 def extract_text_from_pdf(pdf_path):
     text = ""
